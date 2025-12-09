@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Angry Parabola — Upgraded</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <canvas id="game"></canvas>
+
+    <aside class="hud">
+      <h2>Angry Parabola</h2>
+      <div class="sling-info">
+        <div><strong>Sudut:</strong> <span id="hud-angle">0</span>°</div>
+        <div><strong>Kecepatan:</strong> <span id="hud-speed">0</span></div>
+        <div><strong>Vx:</strong> <span id="hud-vx">0</span></div>
+        <div><strong>Vy:</strong> <span id="hud-vy">0</span></div>
+        <div><strong>Level:</strong> <span id="hud-level">1</span></div>
+        <div><strong>Skor:</strong> <span id="hud-score">0</span></div>
+      </div>
+
+      <div class="controls">
+        <button id="reset-level">Reset Level</button>
+        <button id="next-level">Next Level</button>
+      </div>
+
+      <div class="legend">
+        <div><span class="dot enemy"></span> Musuh (lingkaran)</div>
+        <div><span class="dot wood"></span> Kayu</div>
+        <div><span class="dot ice"></span> Es</div>
+        <div><span class="dot stone"></span> Batu</div>
+      </div>
+
+      <small class="hint">Klik & tarik bola (drag) lalu lepaskan untuk menembak. Lihat preview lintasan saat menarik.</small>
+    </aside>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
